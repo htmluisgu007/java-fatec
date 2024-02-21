@@ -1,4 +1,3 @@
-
 //Verificar se um número é positivo ou negativo
 
 import java.util.Scanner;
@@ -227,4 +226,3 @@ public class SenhaSecreta {
         System.out.println("Senha correta. Acesso permitido.");
     }
 }
-Java.txt…]()
