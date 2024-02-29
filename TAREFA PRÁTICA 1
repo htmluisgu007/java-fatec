@@ -7,7 +7,6 @@ public class VerificarNum{
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int numero = scanner.nextInt();
-        
         if (numero > 0){
             System.out.print("O numero e positivo");
             }else{
@@ -27,7 +26,6 @@ public class CompararNumeros {
         int numero1 = scanner.nextInt();
         System.out.print("Digite o segundo numero: ");
         int numero2 = scanner.nextInt();
-
         if (numero1 == numero2) {
             System.out.println("Os numero sao iguais: ");
         } else if (numero1 > numero2) {
@@ -49,8 +47,7 @@ public class CalcularArea {
         System.out.println("Escolha a opcao:");
         System.out.println("1. Calcular area do quadrado");
         System.out.println("2. Calcular area do circulo");
-        int escolha = scanner.nextInt();
-
+        int escolha = scanner.nextInt()
         switch (escolha) {
             case 1:
                 System.out.print("Digite o lado do quadrado: ");
@@ -80,7 +77,6 @@ public class Tabuada {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int numero = scanner.nextInt();
-
         for (int i = 1; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
         }
@@ -97,7 +93,6 @@ public class ParOuImpar {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int numero = scanner.nextInt();
-
         if (numero % 2 == 0) {
             System.out.println("O numero e par.");
         } else {
@@ -116,7 +111,6 @@ public class Fatorial {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int numero = scanner.nextInt();
-
         int fatorial = 1;
         for (int i = 1; i <= numero; i++) {
             fatorial *= i;
@@ -135,7 +129,6 @@ public class FaixaEtaria {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite a idade: ");
         int idade = scanner.nextInt();
-
         if (idade < 18) {
             System.out.println("Menor de idade");
         } else if (idade >= 18 && idade < 60) {
@@ -155,7 +148,6 @@ public class SomaNumerosImpares {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um numero inteiro: ");
         int n = scanner.nextInt();
-
         int soma = 0;
         int contador = 0;
         int numero = 1;
@@ -179,15 +171,12 @@ public class ListaNomes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] nomes = new String[5];
-
         for (int i = 0; i < 5; i++) {
             System.out.print("Digite o nome " + (i + 1) + ": ");
             nomes[i] = scanner.nextLine();
         }
-
         System.out.print("Digite um nome para verificar se esta na lista: ");
         String nomeVerificar = scanner.nextLine();
-
         boolean encontrado = false;
         for (String nome : nomes) {
             if (nomeVerificar.equalsIgnoreCase(nome)) {
@@ -195,7 +184,6 @@ public class ListaNomes {
                 break;
             }
         }
-
         if (encontrado) {
             System.out.println(nomeVerificar + " esta na lista.");
         } else {
@@ -214,7 +202,6 @@ public class SenhaSecreta {
         Scanner scanner = new Scanner(System.in);
         final String senhaCorreta = "Java123";
         String senhaDigitada;
-
         do {
             System.out.print("Digite a senha: ");
             senhaDigitada = scanner.nextLine();
@@ -222,7 +209,6 @@ public class SenhaSecreta {
                 System.out.println("Senha incorreta. Tente novamente.");
             }
         } while (!senhaDigitada.equals(senhaCorreta));
-
         System.out.println("Senha correta. Acesso permitido.");
     }
 }
